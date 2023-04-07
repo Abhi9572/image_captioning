@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <center>
+    <div>
+	<title>Image Uploader</title>
+	<link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- image uploading from local device -->
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">About Us</a>
+	</nav>
+	<h1>Image Uploader</h1>
+	<form>
+		<input type="file" id="image-input" multiple>
+	</form>
+	<div class="image-preview"></div>
+	<button id="delete-btn" disabled>Delete Images</button>
+    <br><br>
+    <!-- image uploading from local device -->
+
+
+    <!-- image extraction using url and image address -->
+    <form>
+    <input type="text" id="urlInput" placeholder="Enter image URL">
+    </form>
+    <br>
+	<button onclick="retrieveImage()">Retrieve Image</button>
+    
+	<div id="imageContainer"></div>
+    <!-- image extraction using url and image address -->
+</div>
+</center>
+<script src="script.js"></script>
+</body>
